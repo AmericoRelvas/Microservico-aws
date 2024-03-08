@@ -1,18 +1,36 @@
-# Welcome to your CDK Java project!
+## 🔨 Projeto CDK Java
 
-This is a blank project for CDK development with Java.
+Este projeto foi desenvolvido no curso de Microserviços na prática: IaC com CDK e deploy na AWS na plataforma Alura.
+Foi desenvolvido um projeto de Infraestrutura como Código (IaC) do zero, utilizando o AWS CDK (Cloud Development Kit) e escrevendo seu código em Java. Também criou classes específicas para cada stack, provisionando recursos de CPU, memória, configurando Load Balancer, Auto Scaling e definindo métricas para que o ambiente na nuvem controle o momento certo de criar ou destruir novas instâncias.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+Este projeto usa diversas tecnologias e ferramentas como:
 
-It is a [Maven](https://maven.apache.org/) based project, so you can open this project with any Maven compatible Java IDE to build and run tests.
+**Java 17:** Linguagem de programação back-end.
 
-## Useful commands
+**Spring Boot:** Para a construção da aplicação Java de maneira rápida e eficiente.
 
- * `mvn package`     compile and run tests
- * `cdk ls`          list all stacks in the app
- * `cdk synth`       emits the synthesized CloudFormation template
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk docs`        open CDK documentation
+**Maven:** Como gerenciador de dependências, facilitando o processo de construção e execução do projeto.
 
-Enjoy!
+**MySQL:** Como banco de dados relacional da aplicação.
+
+**AWS ECR:** Serviço totalmente gerenciado que permite armazenar, gerenciar e implantar imagens de contêineres do Docker na nuvem da AWS. 
+
+**AWS RDS:** Serviço de banco de dados relacional totalmente gerenciado que facilita a configuração, operação e escalabilidade de bancos de dados relacionais na nuvem da AWS. 
+
+**AWS ECS:** Serviço de orquestração de contêineres altamente dimensionável e totalmente gerenciado que permite executar, interromper e gerenciar contêineres Docker em uma infraestrutura escalável.
+
+**AWS CDK:** Estrutura de desenvolvimento de software que permite definir recursos de infraestrutura como código usando linguagens de programação.
+
+**AWS Cloudformation:** Serviço que permite modelar e provisionar recursos da AWS de forma automatizada e previsível, usando arquivos de modelo YAML ou JSON. 
+
+**Docker:** Plataforma de software que permite que você empacote, distribua e execute aplicativos em contêineres. 
+
+## 🔨 Objetivos do projeto
+
+ - Entender a motivação para levar a infraestrutura para o ambiente Cloud e os recursos necessários para o deploy
+ - Conheçer o AWS CDK (Cloud Development Kit), framework de desenvolvimento para escrever e provisionar a infra utilizando linguagens de programação conhecidas
+ - Saiber o que é ECS, ECR, Fargate, RDS e qual o papel de cada um deles na sua solução arquitetural
+ - Descubrir o que é necessário para conectar a aplicação a um banco de dados gerenciado pelo RDS
+ - Realizar o deploy na nuvem AWS de todas as Stacks 
+ - Monitorar os logs da aplicação com o Cloudwatch e fazer o Auto Scaling dos serviços
+
